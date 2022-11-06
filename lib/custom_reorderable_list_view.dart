@@ -97,6 +97,7 @@ class _BodyState extends State<Body> {
                   buildDefaultDragHandles: false,
                   // header: kContainer('Header'),
                   // footer: kContainer('Footer'),
+                  
                   scrollDirection: Axis.horizontal,
                   itemCount: items.length,
                   onReorder: _reorderData,
@@ -119,8 +120,7 @@ class _BodyState extends State<Body> {
                             curve: Curves.easeInOut,
                           );
                         },
-                        child: kContainer(widget.items[index],
-                            pins.any((e) => e == items[index])),
+                        child: kContainer(widget.items[index], pins.any((e) => e == items[index])),
                       ),
                     );
                   },
